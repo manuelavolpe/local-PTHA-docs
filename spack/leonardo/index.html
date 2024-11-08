@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://manuelavolpe.github.io/local-PTHA-docs/spack/leonardo/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Instructions for Leonardo - Local PTHA documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extra.css" rel="stylesheet" />
+        <link href="https://unpkg.com/katex@0/dist/katex.min.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Instructions for Leonardo";
+        var mkdocs_page_input_path = "spack/leonardo.md";
+        var mkdocs_page_url = "/local-PTHA-docs/spack/leonardo/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/logoGTM.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Background</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/l-ptha/">Local-scale PTHA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/neamthm18/">The regional hazard model NEAMTHM18</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/thysea/">The Tsunami-HySEA code</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Instructions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/how-to-download/">How to download</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/json_input/">The JSON input file</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/requirements/">Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/telescopic_grids/">How to build telescopic nested grids</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/usage/">Usage</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../other/disaggregation/">The disaggregation procedure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../other/sampling/">The importance sampling procedure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Spack</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../env_spack/">How to use Spack</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Instructions for Leonardo</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../mercalli/">Instructions for Mercalli</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../useful_commands/">Useful Spack commands</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Steps</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/overview/">General overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step1/">STEP 1: POI(s) selection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step2/">STEP 2: Scenario dumping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step3/">STEP 3: Scenario selection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step4/">STEP 4: Scenario rates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step5/">STEP 5: Tsunami simulations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step6/">STEP 6: Hazard aggregation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step7/">STEP 7: Hazard visualization</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Local PTHA documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Spack</li>
+      <li class="breadcrumb-item active">Instructions for Leonardo</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/manuelavolpe/local-PTHA-docs/edit/master/docs/spack/leonardo.md">Edit on manuelavolpe/local-PTHA-docs</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="instructions-for-leonardo"><strong>Instructions for Leonardo</strong></h1>
+<p>On leonardo @CINECA, Spack is already installed as a module, and the user just has to load it and then create and configure the environment:</p>
+<ol>
+<li>in your home directory, load Spack:
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>module load spack/0.19.1-d71
+</span></code></pre></div></li>
+<li>create and activate the environment with the following commands:
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>spack env create -d spack_env_name
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>spack env activate [-p] ~/spack_env_name
+</span></code></pre></div>
+    Note that the <code>-p</code> is just a flag to visualize the environment is active.</li>
+<li>
+<p>add Python and py-pip to the environment and install them
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>spack add python py-pip
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>spack -d install
+</span></code></pre></div>
+    In this way, the (last) preferred version of Python will be installed. You can do <code>spack find</code> to see which packages have been installed.</p>
+<details class="tip" open="open">
+<summary>Tip</summary>
+<p>In case you want to install a specific Python version, you can search and choose the preferred version through the commands
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>spack info python
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>spack add python@version
+</span></code></pre></div></p>
+</details>
+</li>
+<li>
+<p>install Python packages needed to run the WF in the environment
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip install -r /path-to-software/cheese-ptha-master/requirements.txt
+</span></code></pre></div></p>
+<p>The file <code>requirements.txt</code> is provided with the workflow.</p>
+<details class="warning" open="open">
+<summary>Warning</summary>
+<p>You could get the error <code>ModuleNotFoundError: No module named 'pip'</code>. If this is the case, you have to load py-pip before installing the Python packages
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>spack load py-pip
+</span></code></pre></div></p>
+</details>
+</li>
+</ol>
+<p>The environment is ready. For any new session, of course, it must be activated by the commands
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>module load spack/0.19.1-d71
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>spack env activate [-p] ~/spack_env_name
+</span></code></pre></div></p>
+<p><strong>The same two lines should be inserted within the file <code>load_env.source</code>.</strong></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../env_spack/" class="btn btn-neutral float-left" title="How to use Spack"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mercalli/" class="btn btn-neutral float-right" title="Instructions for Mercalli">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/manuelavolpe/local-PTHA-docs" class="fa fa-code-fork" style="color: #fcfcfc"> manuelavolpe/local-PTHA-docs</a>
+        </span>
+    
+    
+      <span><a href="../env_spack/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../mercalli/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/mathjax.js"></script>
+      <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../javascripts/katex.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

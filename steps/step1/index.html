@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://manuelavolpe.github.io/local-PTHA-docs/steps/step1/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>STEP 1: POI(s) selection - Local PTHA documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extra.css" rel="stylesheet" />
+        <link href="https://unpkg.com/katex@0/dist/katex.min.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "STEP 1: POI(s) selection";
+        var mkdocs_page_input_path = "steps/step1.md";
+        var mkdocs_page_url = "/local-PTHA-docs/steps/step1/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/logoGTM.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Background</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/l-ptha/">Local-scale PTHA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/neamthm18/">The regional hazard model NEAMTHM18</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/thysea/">The Tsunami-HySEA code</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Instructions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/how-to-download/">How to download</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/json_input/">The JSON input file</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/requirements/">Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/telescopic_grids/">How to build telescopic nested grids</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/usage/">Usage</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../other/disaggregation/">The disaggregation procedure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../other/sampling/">The importance sampling procedure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Spack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/env_spack/">How to use Spack</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/leonardo/">Instructions for Leonardo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/mercalli/">Instructions for Mercalli</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/useful_commands/">Useful Spack commands</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Steps</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../overview/">General overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">STEP 1: POI(s) selection</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../step2/">STEP 2: Scenario dumping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../step3/">STEP 3: Scenario selection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../step4/">STEP 4: Scenario rates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../step5/">STEP 5: Tsunami simulations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../step6/">STEP 6: Hazard aggregation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../step7/">STEP 7: Hazard visualization</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Local PTHA documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Steps</li>
+      <li class="breadcrumb-item active">STEP 1: POI(s) selection</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/manuelavolpe/local-PTHA-docs/edit/master/docs/steps/step1.md">Edit on manuelavolpe/local-PTHA-docs</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="step-1-pois-selection"><strong>STEP 1: POI(s) selection</strong></h1>
+<p>This step aims to select, from <a href=../../background/neamthm18 target="_blank">NEAMTHM18</a> database, the POI(s) which fall within a rectangular area containing the coastlines around the target site. Such rectangular area can be built in two ways:</p>
+<ol>
+<li>
+<p>if the high-resolution inner grid is available and declared within the <a href=../../instructions/json_input target="_blank">JSON input file</a>, the grid domain is used to draw a rectangle whose sides are then expanded by <span class="arithmatex">\(X\)</span> kilometers perpendicularly (<span class="arithmatex">\(X=10\)</span> km by default);
+<img src="../../images/Catania_map_POI.png"/></p>
+</li>
+<li>
+<p>if the key "grdfile" in the <a href="The-JSON-input-file" target="_blank"> input file</a> is empty while the coordinates of the target site are provided, the first rectangle is drawn by moving <span class="arithmatex">\(\pm X^\circ\)</span> from the site both vertically and horizontally (<span class="arithmatex">\(X = 0.1^\circ\)</span> by default) and then its sides are extended as before;</p>
+</li>
+</ol>
+<p>if both the keys "grdfile" and "lonlat" are empty, the labels of the POIs are expected to be given by the user in the following field "poinames".</p>
+<p>The outputs of this step are text files with labels (_POI_name.txt) and coordinates (_ts.dat) of the selected POI(s). The last one is formatted to make the <a href="Tsunami-HySEA" target="_blank">HySEA code</a> save the time series at the POIs when running the tsunami simulations (<a href="Tsunami-Numerical-Simulations" target="_blank">Step 5</a>).</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../overview/" class="btn btn-neutral float-left" title="General overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../step2/" class="btn btn-neutral float-right" title="STEP 2: Scenario dumping">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/manuelavolpe/local-PTHA-docs" class="fa fa-code-fork" style="color: #fcfcfc"> manuelavolpe/local-PTHA-docs</a>
+        </span>
+    
+    
+      <span><a href="../overview/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../step2/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/mathjax.js"></script>
+      <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../javascripts/katex.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

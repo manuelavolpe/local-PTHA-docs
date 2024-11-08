@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://manuelavolpe.github.io/local-PTHA-docs/instructions/installation/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Installation - Local PTHA documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extra.css" rel="stylesheet" />
+        <link href="https://unpkg.com/katex@0/dist/katex.min.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Installation";
+        var mkdocs_page_input_path = "instructions/installation.md";
+        var mkdocs_page_url = "/local-PTHA-docs/instructions/installation/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/logoGTM.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Background</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/l-ptha/">Local-scale PTHA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/neamthm18/">The regional hazard model NEAMTHM18</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/thysea/">The Tsunami-HySEA code</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Instructions</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../how-to-download/">How to download</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Installation</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../json_input/">The JSON input file</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../requirements/">Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../telescopic_grids/">How to build telescopic nested grids</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../usage/">Usage</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../other/disaggregation/">The disaggregation procedure</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../other/sampling/">The importance sampling procedure</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Spack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/env_spack/">How to use Spack</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/leonardo/">Instructions for Leonardo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/mercalli/">Instructions for Mercalli</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/useful_commands/">Useful Spack commands</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Steps</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/overview/">General overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step1/">STEP 1: POI(s) selection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step2/">STEP 2: Scenario dumping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step3/">STEP 3: Scenario selection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step4/">STEP 4: Scenario rates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step5/">STEP 5: Tsunami simulations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step6/">STEP 6: Hazard aggregation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step7/">STEP 7: Hazard visualization</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Local PTHA documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Instructions</li>
+      <li class="breadcrumb-item active">Installation</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/manuelavolpe/local-PTHA-docs/edit/master/docs/instructions/installation.md">Edit on manuelavolpe/local-PTHA-docs</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="installation"><strong>Installation</strong></h1>
+<p>The present version of the workflow requires the entire execution is carried out on the same (HPC) cluster, which must be equipped with GPUs in order to be able to run the tsunami simulations. 
+Here is a table of the presently available clusters:</p>
+<table>
+<thead>
+<tr>
+<th>INSTITUTE</th>
+<th>CLUSTER</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>INGV</td>
+<td>mercalli</td>
+</tr>
+<tr>
+<td>CINECA</td>
+<td>leonardo</td>
+</tr>
+</tbody>
+</table>
+<p>The hosting institute will provide instructions on how to connect to the cluster.</p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>Before installing, check that the software and data <a href=../requirements target="_blank">requirements</a> are satisfied.</p>
+</details>
+<p>Then, follow these instructions:</p>
+<ol>
+<li>
+<p>download the package from the master branch of the  <a href=https://gitlab.rm.ingv.it/cat/cheese-ptha target="_blank"> gitLab repository </a>  using the "Code" <a href=../how-to-download target="_blank"> button</a> on the top-right of the repository homepage and choosing the preferred compression format;</p>
+<details class="warning" open="open">
+<summary>Warning</summary>
+<p>The <a href=https://gitlab.rm.ingv.it/cat/cheese-ptha target="_blank"> gitLab repository </a> is private and can be accessed only by members. If you are not a member, please contact <a href="mailto: manuela.volpe@ingv.it">us</a>. </p>
+</details>
+</li>
+<li>
+<p>connect to the cluster and transfer the package to the preferred folder (hereinafter referred to as <code>/path-to-software/</code>);</p>
+</li>
+<li>
+<p>unpack the archive: a folder <code>cheese-ptha-master</code> will be created, whose structure is illustrated in this <a href="../../images/folder_structure.png">diagram</a>;</p>
+</li>
+<li>
+<p>create/choose a working folder for IO (hereinafter referred to as <code>/path-to-wdir/</code>) where all the outputs will be saved;</p>
+</li>
+<li>
+<p>copy and rename the provided template for input files to your prefererred location, for example in your working folder (but other locations can be chosen as well):
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cp /path-to-software/cheese-ptha-master/templates/workflow_input.json.template /path-to-wdir/workflow_input.json
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>cp /path-to-software/cheese-ptha-master/templates/load_env.source.template /path-to-wdir/load_env.source
+</span></code></pre></div>
+Instructions on how to fill out the JSON file are provided on the dedicated <a href=../json_input target="_blank"> page</a>, while the <code>load_env.source</code> file should be modified according to the preferred package and environment management system. We suggest <a href=../../spack/env_spack target="_blank"> Spack</a> to build and configure the software environment, but a different package manager (e.g. conda) can be also used.</p>
+</li>
+<li>
+<p>unpack the initial conditions for PS seismicity (see <a href=../../background/neamthm18 target="_blank">NEAMTHM18</a> for details) by typing:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>cd /path-to-software/cheese-ptha-master/inputs/SUBDUCTIONS_from_NEAMTHM18
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>bunzip2 INIT_COND_PS.tar.bz2
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>tar -xvf INIT_COND_PS.tar
+</span></code></pre></div>
+This operation can take a while and can be skipped at the beginning, but must be executed before running <a href=../../workflow_steps/step4 target="_blank"> STEP 4</a> of the workflow.</p>
+</li>
+<li>create/choose a folder for the topo-bathimetric <a href=../telescopic_grids target="_blank"> grid files</a>  (<code>/path-to-grids/</code>). Having this folder, and the grid files inside it, is not mandatory until the tsunami simulations are executed (<a href=../../workflow_steps/step5 target="_blank"> STEP 5</a>).</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../how-to-download/" class="btn btn-neutral float-left" title="How to download"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../json_input/" class="btn btn-neutral float-right" title="The JSON input file">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/manuelavolpe/local-PTHA-docs" class="fa fa-code-fork" style="color: #fcfcfc"> manuelavolpe/local-PTHA-docs</a>
+        </span>
+    
+    
+      <span><a href="../how-to-download/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../json_input/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/mathjax.js"></script>
+      <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../javascripts/katex.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

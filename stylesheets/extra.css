@@ -1,0 +1,9 @@
+p {
+   text-align: justify;
+   text-justify: inter-word;
+}
+md-banner {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
