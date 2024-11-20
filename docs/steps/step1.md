@@ -7,7 +7,7 @@ This step aims to select, from <a href=../../background/neamthm18 target="_blank
 
 2. if the key "grdfile" in the <a href="The-JSON-input-file" target="_blank"> input file</a> is empty while the coordinates of the target site are provided, the first rectangle is drawn by moving $\pm X^\circ$ from the site both vertically and horizontally ($X = 0.1^\circ$ by default) and then its sides are extended as before;
 
-if both the keys "grdfile" and "lonlat" are empty, the labels of the POIs are expected to be given by the user in the following field "poinames".
+If both the keys "grdfile" and "lonlat" are empty, the labels of the POIs are expected to be given by the user in the last field "poinames". This third option is mandatory in case of POI(s) outside the Mediterranean Sea.
  
 The outputs of this step are text files with labels (\_POI_name.txt) and coordinates (\_ts.dat) of the selected POI(s). The last one is formatted to make the <a href="Tsunami-HySEA" target="_blank">HySEA code</a> save the time series at the POIs when running the tsunami simulations (<a href="Tsunami-Numerical-Simulations" target="_blank">Step 5</a>).
 
