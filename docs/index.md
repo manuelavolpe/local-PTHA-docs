@@ -26,5 +26,5 @@ The tsunami simulations are carried out exploiting the numerical GPU code Tsunam
 
 - <a href=instructions/usage target="_blank">Usage Instructions</a>
 
-- <a href=steps/overview target="_blank">Workflow steps</a>
+- <a href=steps/overview target="_blank">Workflow description</a>
 
