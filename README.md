@@ -1,2 +1,3 @@
 # Local-PTHA-Documentation
-Documentation for the local Probabilistic Tsunami Hazard Analysys (PTHA) workflow
+The documentation for the local Probabilistic Tsunami Hazard Analysys (PTHA) workflow can be found here:
+https://manuelavolpe.github.io/local-PTHA-docs/
