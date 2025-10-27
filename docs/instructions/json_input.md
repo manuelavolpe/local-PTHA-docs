@@ -54,8 +54,11 @@ Each workflow step can be turned on/off by setting them as `True/False`, dependi
     POI_SELECTION
 
 Given the target site, the closest Points of Interest (POIs) are selected from the regional hazard model <a href=../../background/neamthm18 target="_blank">NEAMTHM18</a> in <a href=../../workflow_steps/step1 target="_blank">STEP 1</a>, and then used in the analysis. First of all, the geographic area of the target site must be declared, choosing among Mediterranean Sea ("med"), North-East Atlantic Ocean ("nea"), or Black Sea ("black"). It is worth noting that the workflow is automatized only for target sites overlooking the Mediterranean Sea, while some manual operations are required when dealing with the other regions. Then, in the Mediterranean Sea three different strategies are possible to select the POI(s), prioritized as follows: 
+
 1. if the high-resolution grid for the target site is available (and stored in the declared folder `bathy_dir`) its domain can be used to draw a rectangular region containing the coastline of interest, and the POIs included in that region are selected;
+
 2. if the coordinates of the target site are given, they are used to build the rectangle and search for the POIs within it;
+
 3. if none of the previous options are provided, the label(s) of the POI(s) from <a href=../../background/neamthm18 target="_blank">NEAMTHM18</a> must be directly indicated, as in the following example:
 
 !!! example
@@ -87,9 +90,13 @@ The default regional model is <a href=../../background/neamthm18 target="_blank"
     DISAGGREGATION
 
 When a <a href=../../workflow_steps/disaggregation target="_blank"> disaggregation </a> procedure is required to select relevant scenarios for the target site, some parameters must be defined such as:
+
 - the choice between a disaggregation on MIH (Maximum Inundation Height) intervals (i) or thresholds (t);
+
 - in case of intervals, the MIH interval(s), expressed in m, where the disaggregation must be executed (it can be a single interval, e.g. 1-4, or a sequence of intervals, e.g. 1-4,4-8);
+
 - in case of thresholds, the MIH value(s), expressed in m, where the disaggregation must be executed (it can be one or more values separated by comma, e.g. 1,4);
+
 - the desired percentage of hazard reproduction for each interval/threshold.
 
 For example, the following settings will select the scenarios by disaggregating the hazard to account for 90% of the total at 1 m and 4 m:
@@ -123,8 +130,11 @@ An alternative/complementary method for scenario selection is the <a href="../..
     SIMULATION SETUP
 
 Some parameters for the  <a href=../../workflow_steps/step5 target="_blank">tsunami simulations</a> must be defined, such as: 
+
 - the number of levels of nested grids;
+
 - an array defining the refinement ratio of the nesting from the coarsest to the finest grid (it is worth noting that with the simulation code <a href=../../background/Tsunami-HySEA target="_blank">Tsunami-HySEA</a>, a refinement ratio equal to a power of 2 is mandatory);
+
 - the simulation length expressed in hours.
 
 For example, if the simulations are carried out for 4 hours on a grid setup made of an outer grid spanning a regional domain at a resolution of 320 m, and 4 local-scale telescopic grids with increasing resolution equal to 160, 80, 20, and 5 m respectively, this section would be:
@@ -142,7 +152,16 @@ For example, if the simulations are carried out for 4 hours on a grid setup made
 !!! note ""
     HAZARD
 
-The <a href=../../workflow_steps/step6 target="_blank"> hazard aggregation </a> is implemented both in Python and MATLAB, and the user can choose the preferred language, also depending on the software installed on the cluster where the workflow is running. Moreover, this step is parallelized on the domain, through a horizontal decomposition of the highest resolution grid in "slices", which are then processed in parallel. The number of slices (i.e. the number of parallel processes) is computed at runtime, but the maximum allowed number must be declared here, as a trade-off between parallelism and manageability. In addition, the desired forecast time window has to be set, i.e the time period for which the probability of exceedance must be computed (a typical value is 50 years). Finally, a logical variable allows to possibly write the hazard curves as a CSV table. For example:
+The <a href=../../workflow_steps/step6 target="_blank"> hazard aggregation </a> is implemented both in Python and MATLAB, and the user can choose the preferred language, also depending on the software installed on the cluster where the workflow is running. 
+
+Moreover, this step is parallelized on the domain, through a horizontal decomposition of the highest resolution grid in "slices", which are then processed in parallel. The number of slices (i.e. the number of parallel processes) is computed at runtime, but the maximum allowed number must be declared here, as a trade-off between parallelism and manageability. 
+
+Two additional parameters are
+
+- the desired forecast time window, i.e the time period for which the probability of exceedance must be computed (a typical value is 50 years)
+- a logical variable allowing to possibly write the hazard curves as a CSV table. 
+
+For example:
 
 !!! example
     ```json
