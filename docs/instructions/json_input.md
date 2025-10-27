@@ -13,9 +13,13 @@ As explained in the <a href=../installation target="_blank">installation instruc
     SETTINGS
 
 This first section is mandatory from the very beginning. The required information is:
+
 - the (complete) path for the working folder (```json work_path ```)
+
 - the (complete) path for the folder containing the workflow (```json workflow_dir ```)
+
 - the (complete) path for the folder containing the topo-bathymetric grids ```json bathy_dir ```)
+
 - the script (with path) activating the software environment to run the steps on the computational nodes of the HPC cluster.
 
 !!! example
