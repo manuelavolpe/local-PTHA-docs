@@ -1,4 +1,4 @@
-# **How to build telescopic nested grids**
+# **Telescopic nested grids**
 
 The <a href=../../background/Tsunami-HySEA target="_blank">Tsunami-HySEA</a> code for the numerical simulation of tsunami generation, propagation, and inundation exploits the telescopic nested grid algorithm to have progressively higher resolution as far as the target site is approached. This allows to save computational time and resources, obtaining a detailed local modeling of the inundation without the need of using the same resolution in the whole simulation domain.
 

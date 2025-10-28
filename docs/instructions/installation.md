@@ -51,6 +51,6 @@ cd /path-to-software/cheese-ptha-master/inputs/Caribbean_from_NEAMTHM18
 bunzip2 INIT_COND_PSSlip.tar.bz2
 tar -xvf INIT_COND_PSSlip.tar
 ```
-7. create/choose a folder for the topo-bathimetric <a href=../telescopic_grids target="_blank"> grid files</a>  (`/path-to-grids/`). Having this folder, and the grid files inside it, is not mandatory until the tsunami simulations are executed (<a href=../../workflow_steps/step5 target="_blank"> STEP 5</a>), although the highest resolution grid can be optionally used for the selection of the Point(s) of Interest (POIs) in <a href=../../workflow_steps/step4 target="_blank"> STEP 1</a>.
+7. create/choose a folder for the topo-bathimetric <a href=../../background/nested_grids target="_blank"> grid files</a>  (`/path-to-grids/`). Having this folder, and the grid files inside it, is not mandatory until the tsunami simulations are executed (<a href=../../workflow_steps/step5 target="_blank"> STEP 5</a>), although the highest resolution grid can be optionally used for the selection of the Point(s) of Interest (POIs) in <a href=../../workflow_steps/step4 target="_blank"> STEP 1</a>.
 
 
