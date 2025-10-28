@@ -61,4 +61,4 @@ The environment is ready. For any new session, of course, it must be activated b
 spack env activate [-p] ~/spack_env_name
 ```
 
-**The same line should be inserted within the file `load_env.source`** (see the <a href=../../istructions/installation target="_blank"> installation instructions</a>).
+**The same line should be inserted within the file `load_env.source`** (see the <a href=../../instructions/installation target="_blank"> installation instructions</a>).

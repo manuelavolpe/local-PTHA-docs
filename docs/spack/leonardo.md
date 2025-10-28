@@ -45,6 +45,6 @@ module load spack/0.19.1-d71
 spack env activate [-p] ~/spack_env_name
 ```
 
-**The same two lines should be inserted within the file `load_env.source`** (see the <a href=../../istructions/installation target="_blank"> installation instructions</a>). 
+**The same two lines should be inserted within the file `load_env.source`** (see the <a href=../../instructions/installation target="_blank"> installation instructions</a>). 
 
 [^footnote1]: Omitting such a flag is not allowed on Leonardo since the standard user does not have writing permission on the default spack folder.
