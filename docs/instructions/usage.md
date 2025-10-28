@@ -17,7 +17,7 @@ The word SITENAME in the command is a placeholder and must be replaced with a na
 
 In production mode, it is strongly recommended to run the workflow preventing the process from receiving the SIGHUP (Signal Hang UP) signal upon closing or exiting the terminal:
 
-```plaintext
-nohup pyhton /path-to-software/cheese-ptha-master/workflow_main.py --sitename SITENAME --input_workflow /path-to-wdir/workflow_input.json &
+```bash
+nohup python /path-to-software/cheese-ptha-master/workflow_main.py --sitename SITENAME --input_workflow /path-to-wdir/workflow_input.json &
 ```
 

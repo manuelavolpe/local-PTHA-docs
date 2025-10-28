@@ -27,7 +27,7 @@ Moreover, since Python 2.7 is in use by default, while a version >3.6 is require
     spack env activate [-p] ~/spack_env_name
     ```
 
-    Note that the `-d` option will create the environment in the current (home) folder, while omitting it will result in creating the environment in the default folder (`~/spack/var/spack/environments/`). The `-p` is just a flag to visualize the environment is active.
+    Note that the `-d` option will create the environment in the current folder (typically the `home` folder but can be a dedicated one), while omitting it will result in creating the environment in the default folder (`~/spack/var/spack/environments/`). The `-p` is just a flag to visualize the environment is active.
 
 1. add Python and py-pip to the environment and install them
     ```
@@ -43,12 +43,13 @@ Moreover, since Python 2.7 is in use by default, while a version >3.6 is require
         spack add python@version
         ```
 
-1. install Python packages needed to run the WF in the environment
+1. install Python packages needed to run the workflow in the environment
     ```
     pip install -r /path-to-software/cheese-ptha-master/requirements.txt
     ```
 
     The file `requirements.txt` is provided with the workflow.
+
     ???+ warning
         You could get the error `ModuleNotFoundError: No module named 'pip'`. If this is the case, you have to load py-pip before installing the Python packages
         ```
@@ -60,4 +61,4 @@ The environment is ready. For any new session, of course, it must be activated b
 spack env activate [-p] ~/spack_env_name
 ```
 
-**The same line should be inserted within the file `load_env.source`.**
+**The same line should be inserted within the file `load_env.source`** (see the <a href=../../istructions/installation target="_blank"> installation instructions</a>).

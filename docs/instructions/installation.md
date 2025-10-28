@@ -27,19 +27,30 @@ Then, follow these instructions:
 4. create/choose a working folder for IO (hereinafter referred to as `/path-to-wdir/`) where all the outputs will be saved;
 
 5. copy and rename the provided template for input files to your prefererred location, for example in your working folder (but other locations can be chosen as well):
-```plaintext
+```bash
 cp /path-to-software/cheese-ptha-master/templates/workflow_input.json.template /path-to-wdir/workflow_input.json
 cp /path-to-software/cheese-ptha-master/templates/load_env.source.template /path-to-wdir/load_env.source
 ```
 Instructions on how to fill out the JSON file are provided on the dedicated <a href=../json_input target="_blank"> page</a>, while the `load_env.source` file should be modified according to the preferred package and environment management system. We suggest <a href=../../spack/env_spack target="_blank"> Spack</a> to build and configure the software environment, but a different package manager (e.g. conda) can be also used.
 
 6. unpack the initial conditions for PS seismicity (see <a href=../../background/neamthm18 target="_blank">NEAMTHM18</a> for details) by typing:
-```plaintext
+```bash
 cd /path-to-software/cheese-ptha-master/inputs/SUBDUCTIONS_from_NEAMTHM18
 bunzip2 INIT_COND_PS.tar.bz2
 tar -xvf INIT_COND_PS.tar
 ```
 This operation can take a while and can be skipped at the beginning, but must be executed before running <a href=../../workflow_steps/step4 target="_blank"> STEP 4</a> of the workflow.
+
+In case of target sites located along the North-Eastern Atlantic coast, outside the Mediterranean Sea, the same unpacking process must be carried out for the initial conditions of sources belonging to the Mid Atlantic Ridge and to the Caribbean arc:
+```bash
+cd /path-to-software/cheese-ptha-master/inputs/MidAtlantic_from_NEAMTHM18 
+bunzip2 INIT_COND_PSMar.tar.bz2
+tar -xvf INIT_COND_PSMar.tar
+
+cd /path-to-software/cheese-ptha-master/inputs/Caribbean_from_NEAMTHM18 
+bunzip2 INIT_COND_PSSlip.tar.bz2
+tar -xvf INIT_COND_PSSlip.tar
+```
 7. create/choose a folder for the topo-bathimetric <a href=../telescopic_grids target="_blank"> grid files</a>  (`/path-to-grids/`). Having this folder, and the grid files inside it, is not mandatory until the tsunami simulations are executed (<a href=../../workflow_steps/step5 target="_blank"> STEP 5</a>), although the highest resolution grid can be optionally used for the selection of the Point(s) of Interest (POIs) in <a href=../../workflow_steps/step4 target="_blank"> STEP 1</a>.
 
 

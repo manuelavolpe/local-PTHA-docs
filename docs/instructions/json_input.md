@@ -57,7 +57,7 @@ Given the target site, the closest Points of Interest (POIs) are selected from t
 
 1. if the high-resolution grid for the target site is available (and stored in the declared folder `bathy_dir`) its domain can be used to draw a rectangular region containing the coastline of interest, and the POIs included in that region are selected;
 
-2. if the coordinates of the target site are given, they are used to build the rectangle and search for the POIs within it;
+2. if the coordinates of the target site are instead given, they are used to build the rectangle and search for the POIs within it;
 
 3. if none of the previous options are provided, the label(s) of the POI(s) from <a href=../../background/neamthm18 target="_blank">NEAMTHM18</a> must be directly indicated, as in the following example:
 
@@ -120,7 +120,7 @@ An alternative/complementary method for scenario selection is the <a href="../..
 ???+ warning
     The  <a href=../../workflow_steps/sampling target="_blank"> importance sampling </a> has not been implemented yet, so it must be set as False
 
-    ```plaintext
+    ```json
     {
     "sampling": False
     }
