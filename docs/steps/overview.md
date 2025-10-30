@@ -14,4 +14,4 @@ Here is a brief description of the steps that form the workflow. More detailed e
 
 <a href=../step6 target="_blank">STEP 6 - Hazard aggregation</a> &rarr;  aimed at combining the tsunami amplitude computed through the numerical simulations with the scenario rates, in order to calculate the hazard curves on a predefined set of MIH (Maximum Inundation Height) thresholds.
 
-<a href=../step7 target="_blank">STEP 7 - Visualization</a> &rarr; aimed at producing hazard and inundation maps for selected average return periods (ARPs) for visualization, as well as exporting the hazard curves as csv tables for better portability.
+<a href=../step7 target="_blank">STEP 7 - Visualization</a> &rarr; aimed at producing hazard and inundation maps for selected average return periods (ARPs) for visualization, as well as exporting the hazard curves as csv tables for distribution.
