@@ -69,4 +69,4 @@ extra_css:
   - stylesheets/extra.css
   - https://unpkg.com/katex@0/dist/katex.min.css
 not_in_nav: |
-  other
+  others
