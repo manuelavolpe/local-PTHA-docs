@@ -24,7 +24,7 @@ Then, follow these instructions:
 
 3. unpack the archive: a folder `cheese-ptha-master` will be created, whose structure is illustrated in this [diagram](../images/folder_structure.png);
 
-4. create/choose a working folder for IO (hereinafter referred to as `/path-to-wdir/`) where all the outputs will be saved;
+4. create/choose a working folder for IO (hereinafter referred to as `/path-to-wdir/`), possibly outside the workflow folder `cheese-ptha-master`, where all the outputs will be saved;
 
 5. copy and rename the provided template for input files to your prefererred location, for example in your working folder (but other locations can be chosen as well):
 ```bash
