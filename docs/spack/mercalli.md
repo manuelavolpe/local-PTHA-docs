@@ -1,8 +1,9 @@
 # **Instructions for Mercalli**
 
-On mercalli @INGV Spack is not installed, and the user has to do it locally in his/her own area.
+On mercalli @INGV Spack is not installed, and the user has to do it locally in his/her own area. To this aim, please follow the most updated instructions provided in the official <a href=https://spack-tutorial.readthedocs.io/en/latest/tutorial_basics.html#  target="_blank"> official documentation </a>.
 
-Moreover, since Python 2.7 is in use by default, while a version >3.6 is required by Spack, a preliminary step must be executed to force Spack to use Python >3.6, in order to avoid getting this error message `Spack requires Python 3.6 or higher You are running spack with Python 2.7.5`.
+<!--this is a comment>
+<!--Moreover, since Python 2.7 is in use by default, while a version >3.6 is required by Spack, a preliminary step must be executed to force Spack to use Python >3.6, in order to avoid getting this error message `Spack requires Python 3.6 or higher You are running spack with Python 2.7.5`.
 
 0. add the following line to your `~/.bashrc` file:
     ```
@@ -13,13 +14,15 @@ Moreover, since Python 2.7 is in use by default, while a version >3.6 is require
     ```
     git clone -c feature.manyFiles=true https://github.com/spack/spack.git
     . spack/share/spack/setup-env.sh
-    ```
+    ```-->
 
     ???+ tip
         To avoid running the same command every time you open a new terminal, you might want to add this line to your `~/.bashrc` file:
         ```
         . ~/spack/share/spack/setup-env.sh
         ```
+
+Once spack is installed, the environment can be created and configured:
 
 1. create and activate the environment with the following commands:
     ```
@@ -36,6 +39,7 @@ Moreover, since Python 2.7 is in use by default, while a version >3.6 is require
     ```
     
     In this way, the (last) preferred version of Python will be installed. You can do `spack find` to see which packages have been installed.
+
     ???+ Tip
         In case you want to install a specific Python version, you can search and choose the preferred version through the commands
         ```
