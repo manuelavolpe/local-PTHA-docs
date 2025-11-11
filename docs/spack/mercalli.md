@@ -2,7 +2,7 @@
 
 On mercalli @INGV Spack is not installed, and the user has to do it locally in his/her own area. To this aim, please follow the most updated instructions provided in the official <a href=https://spack-tutorial.readthedocs.io/en/latest/tutorial_basics.html#  target="_blank"> official documentation </a>.
 
-<!--this is a comment>
+<!--this is a comment-->
 <!--Moreover, since Python 2.7 is in use by default, while a version >3.6 is required by Spack, a preliminary step must be executed to force Spack to use Python >3.6, in order to avoid getting this error message `Spack requires Python 3.6 or higher You are running spack with Python 2.7.5`.
 
 0. add the following line to your `~/.bashrc` file:
@@ -16,7 +16,7 @@ On mercalli @INGV Spack is not installed, and the user has to do it locally in h
     . spack/share/spack/setup-env.sh
     ```-->
 
-    ???+ tip
+    ???+ Tip
         To avoid running the same command every time you open a new terminal, you might want to add this line to your `~/.bashrc` file:
         ```
         . ~/spack/share/spack/setup-env.sh
@@ -24,13 +24,14 @@ On mercalli @INGV Spack is not installed, and the user has to do it locally in h
 
 Once spack is installed, the environment can be created and configured:
 
-1. create and activate the environment with the following commands:
+1. move to the desired folder and create and activate the environment with the following commands:
     ```
+    cd /path-to-folder/
     spack env create -d spack_env_name
-    spack env activate [-p] ~/spack_env_name
+    spack env activate [-p] spack_env_name
     ```
 
-    Note that the `-d` option will create the environment in the current folder (typically the `home` folder but can be a dedicated one), while omitting it will result in creating the environment in the default folder (`~/spack/var/spack/environments/`). The `-p` is just a flag to visualize the environment is active.
+    Note that the `-d` option will create the environment in the current folder, while omitting it will result in creating the environment in the default folder (`~/spack/var/spack/environments/`). The environment can be activate from any folder by adding the complete path to the command. The `-p` is just a flag to visualize the environment is active.
 
 1. add Python and py-pip to the environment and install them
     ```
@@ -54,15 +55,12 @@ Once spack is installed, the environment can be created and configured:
 
     The file `requirements.txt` is provided with the workflow.
 
-    ???+ warning
-        You could get the error `ModuleNotFoundError: No module named 'pip'`. If this is the case, you have to load py-pip before installing the Python packages
-        ```
-        spack load py-pip
-        ```
+The environment is ready. In case of problems, check the <a href=../../others/troubleshooting_spack target="_blank"> troubleshooting guide</a>. If the issue is not tracked there, please <a href="mailto:manuela.volpe@ingv.it" target="_blank"> notify</a>.
 
-The environment is ready. For any new session, of course, it must be activated by the command
+For any new session, of course, it must be activated by the command
 ```
-spack env activate [-p] ~/spack_env_name
+spack env activate [-p] /path-to-folder/spack_env_name
 ```
 
 **The same line should be inserted within the file `load_env.source`** (see the <a href=../../instructions/installation target="_blank"> installation instructions</a>).
+

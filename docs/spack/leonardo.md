@@ -6,12 +6,13 @@ On leonardo @CINECA, Spack is already installed as a module, and the user just h
     ```
     module load spack/0.19.1-d71
     ```
-1. create and activate the environment with the following commands:
+1. move to the desired folder and create and activate the environment with the following commands:
     ```
+    cd /path-to-folder/
     spack env create -d spack_env_name
-    spack env activate [-p] ~/spack_env_name
+    spack env activate [-p] spack_env_name
     ```
-    Note that the `-d` option will create the environment in the current folder, typically the `home` folder but can be a dedicated one [^footnote1]. The `-p` is just a flag to visualize the environment is active.
+    Note that the `-d` option will create the environment in the current folder, typically the `home` folder but can be a dedicated one [^footnote1]. The environment can be activate from any folder by adding the complete path to the command. The `-p` is just a flag to visualize the environment is active.
 
 1. add Python and py-pip to the environment and install them
     ```
