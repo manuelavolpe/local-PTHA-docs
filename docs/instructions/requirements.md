@@ -3,7 +3,7 @@
 The following **software** is required: 
 
 * Bash shell
-* Preferred package manager (suggested: <a href=../../spack/env_spack target="_blank"> Spack</a>)
+* Preferred package manager (suggested: <a href=../../spack/env_spack target="_blank"> Spack</a>, alternative: <a href=../../conda/conda target="_blank"> Conda</a>)
 * Python3.x
 * <a href=../../background/Tsunami-HySEA target="_blank">Tsunami-HySEA</a> code (MC version)
 
