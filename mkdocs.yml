@@ -70,3 +70,34 @@ extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
 not_in_nav: |
   others
+nav:
+  - Home: 
+    - 'index.md'
+    - 'abbreviations.md'
+  - Background:
+    - 'background/l-ptha.md'
+    - 'background/neamthm18.md'
+    - 'background/nested_grids.md'
+    - 'background/thysea.md'
+  - Instructions:
+    - 'instructions/how-to-download.md'
+    - 'instructions/installation.md'
+    - 'instructions/json_input.md'
+    - 'instructions/requirements.md'
+    - 'instructions/usage.md'
+  - Spack:
+    - 'spack/env_spack.md'
+    - 'spack/leonardo.md'
+    - 'spack/mercalli.md'
+    - 'spack/useful_commands.md'
+  - Conda:
+     - 'conda/conda.md'
+  - Steps:
+    - 'steps/overview.md'
+    - 'steps/step1.md'
+    - 'steps/step2.md'
+    - 'steps/step3.md'
+    - 'steps/step4.md'
+    - 'steps/step5.md'
+    - 'steps/step6.md'
+    - 'steps/step7.md'
