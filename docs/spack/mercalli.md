@@ -27,9 +27,9 @@ Once Spack is installed, the environment can be created and configured:
 1. move to the desired folder and create and activate the environment with the following commands:
 
     ```bash
-    foo@bar:~$ cd /path-to-folder/
-    foo@bar:~$ spack env create -d spack_env_name
-    foo@bar:~$ spack env activate [-p] spack_env_name
+    foo@bar:$ cd /path-to-folder/
+    foo@bar:$ spack env create -d spack_env_name
+    foo@bar:$ spack env activate [-p] spack_env_name
     ```
 
     Note that the `-d` option will create the environment in the current folder, while omitting it will result in creating the environment in the default folder (`~/spack/var/spack/environments/`). The environment can be activated from any folder by adding the complete path to the command. The `-p` is just a flag to visualize the environment is active.
@@ -37,33 +37,33 @@ Once Spack is installed, the environment can be created and configured:
 1. add Python and py-pip to the environment and install them
 
     ```bash
-    foo@bar:~$ spack add python py-pip
-    foo@bar:~$ spack -d install
+    foo@bar:$ spack add python py-pip
+    foo@bar:$ spack -d install
     ```
 
     In this way, the (last) preferred version of Python will be installed. You can do `spack find` to see which packages have been installed.
 
-    ???+ Tip
-        In case you want to install a specific Python version, you can search and choose the preferred version through the commands
+    ???+ Warning
+        Due to possible failures in building the dependencies of the Python packages required by the workflow, installing a specific Python version could be needed. To this aim, you can search and choose the preferred version through the commands
         ```bash
-        foo@bar:~$ spack info python
-        foo@bar:~$ spack add python@version
+        foo@bar:$ spack info python
+        foo@bar:$ spack add python@version
         ```
 
 1. install Python packages needed to run the workflow in the environment
 
     ```bash
-    foo@bar:~$ pip install -r /path-to-software/cheese-ptha-master/requirements.txt
+    foo@bar:$ pip install -r /path-to-software/cheese-ptha-master/requirements.txt
     ```
 
-    The file `requirements.txt` is provided with the workflow.
+    The file `requirements.txt` is provided with the workflow. As an alternative, each Python package can be individually installed by the command `pip install package_name`.
 
 The environment is ready. In case of problems, check the <a href=../../others/troubleshooting_spack target="_blank"> troubleshooting guide</a>. If the issue is not tracked there, please <a href="mailto:manuela.volpe@ingv.it" target="_blank"> notify</a>.
 
 For any new session, of course, the environment must be activated by the command
 
 ```bash
-foo@bar:~$ spack env activate [-p] /path-to-folder/spack_env_name
+foo@bar:$ spack env activate [-p] /path-to-folder/spack_env_name
 ```
 
 **The same line should be inserted within the file `load_env.source`** (see the <a href=../../instructions/installation target="_blank"> installation instructions</a>).
