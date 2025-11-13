@@ -1,6 +1,4 @@
 # **The importance sampling procedure**
 
 ???+ warning
-    This page is under constrution
-
-
+    This page is under construction

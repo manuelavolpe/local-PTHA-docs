@@ -58,7 +58,7 @@ Once Spack is installed, the environment can be created and configured:
 
     The file `requirements.txt` is provided with the workflow. As an alternative, each Python package can be individually installed by the command `pip install package_name`.
 
-The environment is ready. In case of problems, check the <a href=../../others/troubleshooting_spack target="_blank">troubleshooting guide</a>. If the issue is not tracked there, please <a href="mailto:manuela.volpe@ingv.it" target="_blank">notify</a>.
+The environment is ready. In case of problems, check the <a href=../../others/troubleshooting_spack target="_blank">troubleshooting guide</a>. If the issue is not tracked there, please <a href="mailto:manuela.volpe@ingv.it" target="_blank">notify us</a>.
 
 For any new session, of course, the environment must be activated by the command
 
