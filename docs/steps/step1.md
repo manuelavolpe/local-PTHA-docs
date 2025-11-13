@@ -11,4 +11,4 @@ Three alternative options are available, depending on which information is provi
 
 3. if both the keys "grdfile" and "lonlat" are empty, the labels of the POIs are expected to be given by the user in the last field "poinames". The label of the POIs can be retrieved from the interactive tsunami hazard tool distributing the <a href=../../background/neamthm18 target="_blank">NEAMTHM18</a> regional model. This third option is mandatory in case of POI(s) outside the Mediterranean Sea.
 
-The outputs of this step are text files with labels (\_POI_name.txt) and coordinates (\_ts.dat) of the selected POI(s). The last one is formatted to make the <a href=../../background/thysea target="_blank">HySEA code</a> save the time series at the POIs when running the tsunami simulations (<a href=../../step5 target="_blank">Step 5</a>).
+The outputs of this step are text files with labels (\_POI_name.txt) and coordinates (\_ts.dat) of the selected POI(s). The last one is formatted to make the <a href=../../background/thysea target="_blank">HySEA code</a> save the time series at the POIs when running the tsunami simulations (<a href=../step5 target="_blank">Step 5</a>).
