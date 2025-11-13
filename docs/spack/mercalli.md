@@ -1,6 +1,6 @@
 # **Instructions for Mercalli**
 
-On Mercalli @INGV Spack is not installed, and the user has to do it locally in his/her own area. To this aim, please follow the most updated instructions provided in the <a href=https://spack-tutorial.readthedocs.io/en/latest/tutorial_basics.html#  target="_blank"> official documentation </a>.
+On Mercalli @INGV Spack is not installed, and the user has to do it locally in his/her own area. To this aim, please follow the most updated instructions provided in the <a href=https://spack-tutorial.readthedocs.io/en/latest/tutorial_basics.html#  target="_blank">official documentation</a>.
 
 <!--this is a comment-->
 <!--Moreover, since Python 2.7 is in use by default, while a version >3.6 is required by Spack, a preliminary step must be executed to force Spack to use Python >3.6, in order to avoid getting this error message `Spack requires Python 3.6 or higher You are running spack with Python 2.7.5`.
@@ -44,7 +44,7 @@ Once Spack is installed, the environment can be created and configured:
     In this way, the (last) preferred version of Python will be installed. You can do `spack find` to see which packages have been installed.
 
     ???+ Warning
-        Due to possible failures in building the dependencies of the Python packages required by the workflow, installing a specific Python version could be needed. To this aim, you can search and choose the preferred version through the commands
+        Due to possible failures in <a href=../../others/troubleshooting_spack target="_blank">building the dependencies</a> of the Python packages required by the workflow, installing a specific Python version could be needed. To this aim, you can search and choose the preferred version through the commands
         ```bash
         foo@bar:$ spack info python
         foo@bar:$ spack add python@version
@@ -58,7 +58,7 @@ Once Spack is installed, the environment can be created and configured:
 
     The file `requirements.txt` is provided with the workflow. As an alternative, each Python package can be individually installed by the command `pip install package_name`.
 
-The environment is ready. In case of problems, check the <a href=../../others/troubleshooting_spack target="_blank"> troubleshooting guide</a>. If the issue is not tracked there, please <a href="mailto:manuela.volpe@ingv.it" target="_blank"> notify</a>.
+The environment is ready. In case of problems, check the <a href=../../others/troubleshooting_spack target="_blank">troubleshooting guide</a>. If the issue is not tracked there, please <a href="mailto:manuela.volpe@ingv.it" target="_blank">notify</a>.
 
 For any new session, of course, the environment must be activated by the command
 
@@ -66,4 +66,4 @@ For any new session, of course, the environment must be activated by the command
 foo@bar:$ spack env activate [-p] /path-to-folder/spack_env_name
 ```
 
-**The same line should be inserted within the file `load_env.source`** (see the <a href=../../instructions/installation target="_blank"> installation instructions</a>).
+**The same line should be inserted within the file `load_env.source`** (see the <a href=../../instructions/installation target="_blank">installation instructions</a>).
