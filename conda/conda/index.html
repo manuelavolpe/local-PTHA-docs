@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://manuelavolpe.github.io/local-PTHA-docs/conda/conda/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Setting a conda environment - Local PTHA documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/extra.css" rel="stylesheet" />
+        <link href="https://unpkg.com/katex@0/dist/katex.min.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Setting a conda environment";
+        var mkdocs_page_input_path = "conda/conda.md";
+        var mkdocs_page_url = "/local-PTHA-docs/conda/conda/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/projects.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Home</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../abbreviations/">Table of Abbreviations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Background</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/l-ptha/">Local-scale PTHA</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/neamthm18/">The regional hazard model NEAMTHM18</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/nested_grids/">Telescopic nested grids</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../background/thysea/">The Tsunami-HySEA code</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Instructions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../../instructions/how-to-download.md">None</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/installation/">Installation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/json_input/">The JSON input file</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/requirements/">Requirements</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../instructions/usage/">Usage</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Spack</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/env_spack/">How to use Spack</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/leonardo/">Instructions for Leonardo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/mercalli/">Instructions for Mercalli</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../spack/useful_commands/">Useful Spack commands</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Conda</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Setting a conda environment</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#creation-and-activation-of-the-environment">Creation and activation of the environment</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Steps</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/overview/">General overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step1/">STEP 1: POI(s) selection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step2/">STEP 2: Scenario dumping</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step3/">STEP 3: Scenario selection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step4/">STEP 4: Scenario rates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step5/">STEP 5: Tsunami simulations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step6/">STEP 6: Hazard aggregation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../steps/step7/">STEP 7: Hazard visualization</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Local PTHA documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Conda</li>
+      <li class="breadcrumb-item active">Setting a conda environment</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/manuelavolpe/local-PTHA-docs/edit/master/docs/conda/conda.md">Edit on manuelavolpe/local-PTHA-docs</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="setting-a-conda-environment"><strong>Setting a conda environment</strong></h1>
+<p>As an alternative to the <a href="../../spack/env_spack" target="_blank">Spack</a> package manager, here we provide a brief tutorial on how to install and create a dedicated conda environment. This can be a valid alternative in particular for the <a href="../../instruction/install">Mercalli cluster</a> hosted at the INGV. </p>
+<h2 id="installation"><strong>Installation</strong></h2>
+<p>The user can install conda in hes/his own personal user account. 
+The following commands will allow to download and install miniconda anywhere in your account (suggested: /home/youraccount): </p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+</span></code></pre></div>
+and then
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>bash ~/Miniconda3-latest-Linux-x86_64.sh
+</span></code></pre></div></p>
+<p>After these two operations, please close and re-open terminal, or type the following command:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>source ~/.bashrc
+</span></code></pre></div>
+<p>However, for further details about the installation procedure, please refer to <a href="https://www.anaconda.com/docs/getting-started/miniconda/install#linux-terminal-installer" target="_blank">this page</a> and follow the instruction for the Linux operating system.</p>
+<h2 id="creation-and-activation-of-the-environment"><strong>Creation and activation of the environment</strong></h2>
+<p>Now, you can create the environment by using the specific requirements file available in the workflow project.
+Open the terminal and move to the main folder of the project (where you cloned or dowloaded it from the gitlab repository) and type:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>conda create --name pyptha_local --file requirements_conda.txt
+</span></code></pre></div>
+<p>The output will show you the progress of the download and the installation of all the necessary packages, ending with a message of succeeding and instructions on how to activate/deactivate the new environment.
+Following these instructions, you can activate the environment by typing:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>conda activate pyptha_local
+</span></code></pre></div>
+<p>Your prompt should now indicate that the environment is active as follow:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>(pyptha_local) [tonini@mercalli cheese-ptha]$
+</span></code></pre></div>
+<p>Now you will be able to use the workflow.</p>
+<details class="note" open="open">
+<summary>Note</summary>
+<p>If the above instruction should not work or if you prefer creating manually creating the environment, the following commands should be enough for creating a new environment with all the necessary packages to run the local ptha workflow.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>conda create --name pyptha_local  python=3.11.11
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>conda install numpy matplotlib scipy geopy pyproj netcdf4 xarray cartopy fabric basemap scikit-learn h5py
+</span></code></pre></div>
+<p>IMPORTANT: it is strongly suggested to use python 3.11.11 and installing the other packages letting that conda found the correct version for all of them. This is needed in order to avoid problems with the operating system libraries compatibility. </p>
+</details>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../spack/useful_commands/" class="btn btn-neutral float-left" title="Useful Spack commands"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../steps/overview/" class="btn btn-neutral float-right" title="General overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/manuelavolpe/local-PTHA-docs" class="fa fa-code-fork" style="color: #fcfcfc"> manuelavolpe/local-PTHA-docs</a>
+        </span>
+    
+    
+      <span><a href="../../spack/useful_commands/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../steps/overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/mathjax.js"></script>
+      <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../javascripts/katex.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
