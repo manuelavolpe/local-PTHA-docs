@@ -7,4 +7,3 @@ This step is automatized when using <a href=../../background/neamthm18 target="_
 In case <a href=../../background/neamthm18 target="_blank">NEAMTHM18</a> v. 1.0 must be used (i.e. outside the Mediterranean), a specific code must be manually executed, producing a single output file for each seismicity type.
 
 The final output is saved in the output folder `RATES` and will be used by <a href=../step6 target="_blank">STEP 6</a>.
-
